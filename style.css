@@ -1,0 +1,184 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:sans-serif;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1rem;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+}
+
+body {
+    background-image: url(/image/backgroound.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.heading {
+    font-family:monospace;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.container {
+    background-color: rgba(215, 236, 250, 0.7);
+    display: grid;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.input-heading {
+    padding: 0px 0px 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: serif;
+    word-spacing: 5px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    text-transform: uppercase;
+}
+
+input:focus {
+    background-color: rgb(208, 225, 200);
+    border: 1px solid green;
+}
+
+.selection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.selection img {
+    align-self: center;
+    height: 30px;
+    padding: 0px;
+}
+
+select {
+    padding: 10px;
+    outline: none;
+    transition: transform 0.2s;
+}
+
+#input-base {
+    margin-right: 10px;
+}
+
+#output-base {
+    margin-left: 10px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    padding: 6px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#swap {
+    width: 150px;
+    background-color: rgb(194, 222, 243);
+    color: rgb(0, 136, 255);
+    border: 1px solid rgb(0, 136, 255);
+}
+
+#swap:hover {
+    background-color: rgb(234, 225, 225);
+}
+
+#convert {
+    align-self: stretch;
+    background-color: rgb(141, 230, 141);
+    color: green;
+    border: 1px solid green;
+}
+
+#convert:hover {
+    background-color: rgb(234, 225, 225);
+}
+
+textarea {
+    padding: 10px;
+    transition: all 0.3s;
+    height: auto;
+}
+
+textarea:hover {
+    background-color: rgb(234, 225, 225);
+}
+
+#error {
+    display: none;
+    padding: 10px;
+    background-color: beige;
+    width: 60%;
+    background-color: rgb(231, 184, 184);
+    color: red;
+    border: 1px solid red;
+}
+
+@media (max-width : 500px) {
+    .heading {
+        font-size: 1.5rem;
+    }
+
+    .input-heading {
+        font-size: 1.3rem;
+    }
+
+    .container {
+        padding: 10px;
+        width: 90%;
+    }
+
+    input {
+        font-size: 1rem;
+        padding: 10px;
+        width: 100%;
+    }
+
+    select {
+        padding: 5px;
+        width: 50%;
+        font-size: 0.8rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding : 5px
+    }
+
+    #error {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Base Converter</title>
+    <link
+      rel="shortcut icon"
+      href="/image/swap.jpg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="heading">Number Base Converter</h1>
+    <div class="container">
+      <h4 class="input-heading">Enter your number</h4>
+      <input type="text" id="input" placeholder="Input" required />
+      <!--input-->
+      <div class="selection">
+        <select name="input-base" id="input-base">
+          <!--from base-->
+          <option value="10">Decimal Number</option>
+          <option value="2">Binary Number</option>
+          <option value="8">Octal Number</option>
+          <option value="16">Hexadecimal Number</option>
+        </select>
+        <img src="/image/swap.jpg" alt="" />
+        <select name="output-base" id="output-base">
+          <!--to base-->
+          <option value="10">Decimal Number</option>
+          <option value="2">Binary Number</option>
+          <option value="8">Octal Number</option>
+          <option value="16">Hexadecimal Number</option>
+        </select>
+      </div>
+      <div class="buttons">
+        <button id="swap" onclick="swap()">Swap</button>
+        <!--swap-->
+        <button id="convert" onclick="convert()">Convert</button>
+        <!--convert-->
+      </div>
+      <textarea id="output" cols="20" rows="2" readonly></textarea>
+      <!--output-->
+    </div>
+    <div id="error"></div>
+    <!--show any error-->
+  </body>
+  <script src="script.js"></script>
+</html>
